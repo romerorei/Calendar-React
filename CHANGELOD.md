@@ -10,3 +10,4 @@
 - Datepicker en español
 - Obtener informacion del formulario del evento
 - Validaciones del formulario
+- Agregar redux y rtk al proyecto
