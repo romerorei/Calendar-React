@@ -5,3 +5,8 @@
 - Configuracion adicionales al calendario
 - Personalizar el cuadro de evento
 - Escuchar eventos del calendario
+- Crear un modal sobre el calendario
+- Contenido del Modal
+- Datepicker en español
+- Obtener informacion del formulario del evento
+- Validaciones del formulario
