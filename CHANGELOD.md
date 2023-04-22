@@ -11,3 +11,4 @@
 - Obtener informacion del formulario del evento
 - Validaciones del formulario
 - Agregar redux y rtk al proyecto
+- Mostrar y ocultar modal en base al Store

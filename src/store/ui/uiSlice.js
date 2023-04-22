@@ -16,4 +16,4 @@ export const uiSlice = createSlice({
 });
 
 
-export const { increment } = uiSlice.actions;
+export const { onOpenDateModal, onCloseDateModal } = uiSlice.actions;
