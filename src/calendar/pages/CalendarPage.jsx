@@ -3,8 +3,7 @@ import { useState } from 'react';
 import { Calendar } from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 
-import { addHours } from 'date-fns';
-import { CalendarEventBox, CalendarModal, Navbar } from "../"
+import { CalendarEventBox, CalendarModal, FabAddNew, Navbar } from "../"
 
 import { getMessagesES, localizer } from '../../helpers';
 import { useUiStore, useCalendarStore } from '../../hooks';
@@ -29,7 +28,7 @@ export const CalendarPage = () => {
 
   const onDoubleClick = ( event ) => {
     openDateModal();
-    console.log(events)
+    //console.log(events)
   }
 
   const onSelect = ( event ) => {
@@ -66,6 +65,7 @@ export const CalendarPage = () => {
         onView={ onViewChanged }
       />
       <CalendarModal />
+      <FabAddNew />
     </>
   )
 }
