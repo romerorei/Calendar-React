@@ -9,8 +9,8 @@ const tempEvent =   {
     end: addHours( new Date(), 2 ),
     bgColor: '#fafafa',
     user: {
-      _id: '123',
-      name: 'Reinaldinho'
+        _id: '123',
+        name: 'Reinaldinho'
     }
 };
 
@@ -25,7 +25,7 @@ export const calendarSlice = createSlice({
     },
     reducers: {
         onSetActiveEvent: ( state, { payload }) => {
-            // state.activeEvent = payload;
+            state.activeEvent = payload;
         },
         onAddNewEvent: ( state, { payload }) => {
             // state.events.push( payload );

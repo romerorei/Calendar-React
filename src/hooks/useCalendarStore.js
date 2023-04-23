@@ -7,9 +7,9 @@ export const useCalendarStore = () => {
     const dispatch = useDispatch();
     const { events, activeEvent } = useSelector( state => state.calendar );
 
-    // const setActiveEvent = ( calendarEvent ) => {
-    //     dispatch( onSetActiveEvent( calendarEvent ) )
-    // }
+    const setActiveEvent = ( calendarEvent ) => {
+        dispatch( onSetActiveEvent( calendarEvent ) )
+    }
 
     // const startSavingEvent = async( calendarEvent ) => {
     //     // TODO: llegar al backend
@@ -40,7 +40,7 @@ export const useCalendarStore = () => {
 
         // //* Métodos
         // startDeletingEvent,
-        // setActiveEvent,
+        setActiveEvent,
         // startSavingEvent,
     }
 }
