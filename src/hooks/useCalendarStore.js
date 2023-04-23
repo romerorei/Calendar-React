@@ -17,7 +17,7 @@ export const useCalendarStore = () => {
         // Todo bien
         if( calendarEvent._id ) {
             // Actualizando
-            //dispatch( onUpdateEvent({ ...calendarEvent }) );
+            dispatch( onUpdateEvent({ ...calendarEvent }) );
         } else {
             // Creando
             dispatch( onAddNewEvent({_id: new Date().getTime(), ...calendarEvent  }) );
