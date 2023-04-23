@@ -16,3 +16,4 @@
 - Carga un evento en el modal
 - Agregar un nuevo evento
 - Editar el evento activo
+- Eliminar un evento

@@ -24,22 +24,22 @@ export const useCalendarStore = () => {
         }
     }
 
-    // const startDeletingEvent = () => {
-    //     // Todo: Llegar al backend
+    const startDeletingEvent = () => {
+        // Todo: Llegar al backend
 
 
-    //     dispatch( onDeleteEvent() );
-    // }
+        dispatch( onDeleteEvent() );
+    }
 
 
     return {
         //* Propiedades
          activeEvent,
          events,
-        // hasEventSelected: !!activeEvent,
+        hasEventSelected: !!activeEvent,
 
         // //* Métodos
-        // startDeletingEvent,
+        startDeletingEvent,
         setActiveEvent,
         startSavingEvent,
     }
