@@ -25,10 +25,11 @@ export const FabAddNew = () => {
 
   return (
     <button
-      className="btn btn-primary fab"
+      className="btn btn-primary "
       onClick={ handleClickNew }
     >
-      <i className="fas fa-plus"></i>
+      <i className="fas fa-plus"> </i>
+      <span>Nuevo evento</span>
     </button>
   )
 }

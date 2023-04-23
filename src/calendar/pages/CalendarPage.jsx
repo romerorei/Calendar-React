@@ -46,7 +46,6 @@ export const CalendarPage = () => {
   return (
     <>
       <Navbar />
-
       <Calendar
         culture='es'
         localizer={ localizer }
@@ -65,7 +64,6 @@ export const CalendarPage = () => {
         onView={ onViewChanged }
       />
       <CalendarModal />
-      <FabAddNew />
       <FabDelete />
     </>
   )
