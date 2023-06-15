@@ -1,9 +1,11 @@
 import { addHours } from "date-fns";
-import { useCalendarStore, useUiStore } from "../../hooks"
+import { useAuthStore, useCalendarStore, useUiStore } from "../../hooks"
+import { useSelector } from "react-redux";
 
 export const FabAddNew = () => {
   const { setActiveEvent } = useCalendarStore();
   const { openDateModal } = useUiStore();
+  const { user } = useAuthStore();
 
   const handleClickNew = () => {
     setActiveEvent(null)
@@ -14,8 +16,8 @@ export const FabAddNew = () => {
       end: addHours( new Date(), 2 ),
       bgColor: '#fafafa',
       user: {
-          _id: '123',
-          name: 'Reinaldinho'
+          _id: user.uid,
+          name: user.name
       }
     });
     openDateModal();
